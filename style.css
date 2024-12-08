@@ -5,12 +5,14 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-body{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background-color: black;
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  overflow-x: hidden;
 }
+
 nav{
     width: 100%;
     height: 10vh;
@@ -95,7 +97,7 @@ nav{
 }
 section{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 .main-container{
     width: 100%;
@@ -237,4 +239,140 @@ section{
     .main-container button{
         margin-top: 15px;
     }
+}
+
+
+/* css for skills */
+/* CSS for Skills Section */
+#skills {
+  min-height: 100vh;
+  background-color: #000;
+  padding: 50px 0;
+}
+
+.skills-container {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #077b32;
+}
+
+.skills-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Skill Category Styling */
+.skill-category {
+  padding: 20px;
+  border: 2px solid #077b32;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #077b32;
+}
+
+.skill-category h3 {
+  color: #077b32;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Programming Languages and Technical Skills */
+/* Tools & Programming Languages */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three items per row */
+  gap: 30px; /* Space between items */
+  text-align: center;
+}
+
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.tool-item i {
+  font-size: 2.5rem;
+  color: #077b32;
+}
+
+.tool-item span {
+  font-size: 1rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two items per row for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .tools-grid {
+    grid-template-columns: repeat(1, 1fr); /* One item per row for very small screens */
+  }
+}
+
+
+
+/* Databases Section */
+.tools-grid .tool-item {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+/* Soft Skills */
+.soft-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.soft-skill {
+  background: #077b32;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.soft-skill:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-container {
+    width: 90%;
+  }
+
+  .skills-content {
+    grid-template-columns: 1fr;
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
 }
