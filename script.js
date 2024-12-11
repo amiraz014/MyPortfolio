@@ -37,4 +37,27 @@ function eraseText(){
         setTimeout(typeWriter, 500)
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const downloadButton = document.getElementById('download-cv-button');
+
+    downloadButton.addEventListener('click', () => {
+
+        const cvUrl = 'source/cvayoub.pdf';
+
+        // Open the CV in a new tab.
+        const newTab = window.open(cvUrl, '_blank');
+
+        // Ensure the new tab is opened successfully.
+        if (newTab) {
+            newTab.focus();
+        } else {
+            alert('Please allow pop-ups for this website.');
+        }
+    });
+});
+
+
+
 window.onload = typeWriter
