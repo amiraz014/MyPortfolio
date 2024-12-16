@@ -243,6 +243,101 @@ section{
 
 
 /*============================================================================================= */
+/* About Section Styles */
+#about {
+  padding: 4rem 2rem;
+  background-color: #000;
+  min-height: 120vh;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.about-text {
+  background: rgba(7, 123, 50, 0.1);
+  border: 2px solid #077b32;
+  border-radius: 10px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.about-text:hover {
+  box-shadow: 0 0 20px #077b32;
+}
+
+.about-text h3 {
+  color: #077b32;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.about-text ul {
+  color: #666;
+  padding-left: 1.5rem;
+}
+
+.about-text ul li {
+  margin-bottom: 0.5rem;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.stat-item {
+  background: rgba(7, 123, 50, 0.1);
+  border: 2px solid #077b32;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #077b32;
+}
+
+.stat-item i {
+  font-size: 2rem;
+  color: #077b32;
+  margin-bottom: 1rem;
+}
+
+.stat-item h4 {
+  color: #077b32;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/*============================================================================================= */
+
 
 /* css for skills */
 /* CSS for Skills Section */
@@ -587,7 +682,7 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-}
+}Background
 
 .footer-content {
   display: flex;

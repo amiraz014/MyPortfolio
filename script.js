@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     downloadButton.addEventListener('click', () => {
 
-        const cvUrl = 'source/cvayoub.pdf';
+        const cvUrl = 'source/cv-Ayoub.pdf';
 
         // Open the CV in a new tab.
         const newTab = window.open(cvUrl, '_blank');
