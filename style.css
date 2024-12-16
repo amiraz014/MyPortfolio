@@ -474,6 +474,21 @@ html {
   scroll-behavior: smooth;
 }
 
+.tool-item i {
+  color: #077b32;
+  font-size: 2.5rem;
+  transition: transform 0.3s ease;
+}
+
+.tool-item i[class*="colored"] {
+  color: #077b32 !important;
+}
+
+.tool-item:hover i {
+  transform: scale(1.2);
+}
+
+
 /*============================================================================================= */
 
 
