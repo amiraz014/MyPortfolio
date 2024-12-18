@@ -227,6 +227,9 @@ section{
         height: 60%;
     }
 }
+
+
+
 @media (max-width:440px){
     .main-container .image{
         width: 50%;
@@ -247,7 +250,7 @@ section{
 #about {
   padding: 4rem 2rem;
   background-color: #000;
-  min-height: 120vh;
+  min-height: 150vh;
 }
 
 .about-container {
