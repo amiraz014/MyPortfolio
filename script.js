@@ -41,15 +41,38 @@ function eraseText(){
 
 document.addEventListener('DOMContentLoaded', () => {
     const downloadButton = document.getElementById('download-cv-button');
+    const dropdown = document.getElementById('cv-options');
+    const downloadCvEn = document.getElementById('download-cv-en');
+    const downloadCvFr = document.getElementById('download-cv-fr');
 
-    downloadButton.addEventListener('click', () => {
+    downloadButton.addEventListener('click', (event) => {
+        event.stopPropagation();
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
 
-        const cvUrl = 'source/ResumeV01.pdf';
+    document.addEventListener('click', (event) => {
+        if (!dropdown.contains(event.target) && event.target !== downloadButton) {
+            dropdown.style.display = 'none';
+        }
+    });
 
-        // Open the CV in a new tab.
+    window.addEventListener('scroll', () => {
+        dropdown.style.display = 'none';
+    });
+
+    downloadCvEn.addEventListener('click', () => {
+        const cvUrl = 'source/ResumeStage.pdf';
         const newTab = window.open(cvUrl, '_blank');
+        if (newTab) {
+            newTab.focus();
+        } else {
+            alert('Please allow pop-ups for this website.');
+        }
+    });
 
-        // Ensure the new tab is opened successfully.
+    downloadCvFr.addEventListener('click', () => {
+        const cvUrl = 'source/ResumeStage.pdf';
+        const newTab = window.open(cvUrl, '_blank');
         if (newTab) {
             newTab.focus();
         } else {
