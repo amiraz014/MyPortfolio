@@ -678,9 +678,16 @@ html {
   min-height: 100vh;
 }
 
-.certificates-container {
-  max-width: 1200px;
+.certificates-section {
+  width: 90%;
   margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #077b32;
 }
 
 .certificates-grid {
