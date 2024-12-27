@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     downloadCvEn.addEventListener('click', () => {
-        const cvUrl = 'source/ResumeStage.pdf';
+        const cvUrl = 'source/cvayoubEnglishStage.pdf';
         const newTab = window.open(cvUrl, '_blank');
         if (newTab) {
             newTab.focus();
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     downloadCvFr.addEventListener('click', () => {
-        const cvUrl = 'source/ResumeStage.pdf';
+        const cvUrl = 'source/cvayoubStageV01.pdf';
         const newTab = window.open(cvUrl, '_blank');
         if (newTab) {
             newTab.focus();
