@@ -81,6 +81,78 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const blogPosts = [
+        {
+            title: "My First Blog Post",
+            date: "January 1, 2024",
+            content: "This is the content of my first blog post. It's a great introduction to my blog.",
+            image: "source/blog1.jpg",
+            tags: ["Introduction", "Personal"],
+            link: "blog-post-1.html"
+        },
+        {
+            title: "Learning JavaScript",
+            date: "February 15, 2024",
+            content: "In this post, I share my journey of learning JavaScript and some tips for beginners.",
+            image: "source/blog2.jpg",
+            tags: ["JavaScript", "Learning"],
+            link: "blog-post-2.html"
+        },
+        {
+            title: "Exploring DevOps",
+            date: "March 10, 2024",
+            content: "DevOps is a fascinating field. Here, I discuss some key concepts and tools.",
+            image: "source/blog3.jpg",
+            tags: ["DevOps", "Tools"],
+            link: "blog-post-3.html"
+        }
+    ];
+
+    const blogContainer = document.getElementById('blog-posts');
+
+    blogPosts.forEach(post => {
+        const postElement = document.createElement('div');
+        postElement.classList.add('blog-post');
+
+        const imageElement = document.createElement('img');
+        imageElement.src = post.image;
+        imageElement.alt = post.title;
+
+        const titleElement = document.createElement('h2');
+        titleElement.textContent = post.title;
+
+        const dateElement = document.createElement('div');
+        dateElement.classList.add('date');
+        dateElement.textContent = post.date;
+
+        const contentElement = document.createElement('p');
+        contentElement.textContent = post.content;
+
+        const tagsElement = document.createElement('div');
+        tagsElement.classList.add('tags');
+        post.tags.forEach(tag => {
+            const tagElement = document.createElement('span');
+            tagElement.classList.add('tag');
+            tagElement.textContent = tag;
+            tagsElement.appendChild(tagElement);
+        });
+
+        const readMoreElement = document.createElement('a');
+        readMoreElement.href = post.link;
+        readMoreElement.textContent = "Read More";
+        readMoreElement.classList.add('read-more');
+
+        postElement.appendChild(imageElement);
+        postElement.appendChild(titleElement);
+        postElement.appendChild(dateElement);
+        postElement.appendChild(contentElement);
+        postElement.appendChild(tagsElement);
+        postElement.appendChild(readMoreElement);
+
+        blogContainer.appendChild(postElement);
+    });
+});
 
 
 window.onload = typeWriter
