@@ -10,7 +10,7 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background-color: gray;
+  background-color: #303030;
   overflow-x: hidden;
 }
 
@@ -19,7 +19,7 @@ nav {
   height: 10vh;
   position: sticky;
   top: 0; /* Add this to make the navigation stick to the top */
-  background-color: gray; /* Add a background color for the sticky nav */
+  background-color: #303030; /* Add a background color for the sticky nav */
   z-index: 10; /* Ensure the navigation is above other content */
 }
 
@@ -38,8 +38,8 @@ nav {
 }
 
 .logo span {
-  color: #007bff;
-  text-shadow: 0 0 10px #007bff;
+  color: #c8ad7f;
+  text-shadow: 0 0 10px #c8ad7f;
 }
 
 
@@ -76,7 +76,7 @@ nav {
   left: 0;
   width: 0%;
   height: 3px;
-  background-color: #007bff;
+  background-color: #c8ad7f;
   transition: 0.2s linear;
 }
 
@@ -85,7 +85,7 @@ nav {
 }
 
 .nav-container .links a:hover {
-  color: #007bff;
+  color: #c8ad7f;
 }
 
 .dropdown {
@@ -96,7 +96,7 @@ nav {
   width: 100%;
   height: auto;
   backdrop-filter: blur(4px) brightness(40%);
-  box-shadow: 0 0 20px gray;
+  box-shadow: 0 0 20px #303030;
   transition: 0.2s linear;
 }
 
@@ -116,7 +116,7 @@ nav {
 }
 
 .dropdown .links a:hover {
-  background-color: #007bff;
+  background-color: #c8ad7f;
 }
 
 section {
@@ -138,7 +138,7 @@ section {
   height: 80vh;
   border-radius: 50%; /* Correct the border-radius to make it a circle */
   overflow: hidden;
-  box-shadow: 0 0 50px #007bff;
+  box-shadow: 0 0 50px #c8ad7f;
   flex-shrink: 0; /* Prevent image from shrinking */
 }
 
@@ -175,8 +175,8 @@ section {
 }
 
 .content h1 span {
-  color: #007bff;
-  text-shadow: 0 0 10px gray;
+  color: #c8ad7f;
+  text-shadow: 0 0 10px #303030;
 }
 
 .content .typewriter {
@@ -185,8 +185,8 @@ section {
 }
 
 .content .typewriter-text {
-  color: #007bff;
-  text-shadow: 0 0 10px #007bff;
+  color: #c8ad7f;
+  text-shadow: 0 0 10px #c8ad7f;
 }
 
 .content p {
@@ -206,9 +206,9 @@ section {
   width: 3rem;
   height: 3rem;
   background-color: transparent;
-  border: 0.2rem solid #007bff;
+  border: 0.2rem solid #c8ad7f;
   border-radius: 50%;
-  color: #007bff;
+  color: #c8ad7f;
   margin: 5px; /* Reduce margin for smaller screens */
   font-size: 1.5rem;
   transition: 0.2s linear;
@@ -216,9 +216,9 @@ section {
 
 .social-links i:hover {
   scale: 1.3;
-  color: gray;
-  background-color: #007bff;
-  filter: drop-shadow(0 0 10px #007bff);
+  color: #303030;
+  background-color: #c8ad7f;
+  filter: drop-shadow(0 0 10px #c8ad7f);
 }
 
 .content .btn-container {
@@ -229,7 +229,7 @@ section {
   width: auto; /* Adjust width to content */
   padding: 15px 30px; /* Add padding for better touch targets */
   margin: 10px; /* Adjust margin */
-  background-color: #007bff;
+  background-color: #c8ad7f;
   color: white;
   border: none;
   outline: none;
@@ -242,11 +242,11 @@ section {
 
 .content button:hover {
   scale: 1.1;
-  color: #007bff;
-  border: 2px solid #007bff;
+  color: #c8ad7f;
+  border: 2px solid #c8ad7f;
   background-color: transparent;
   font-weight: 700;
-  box-shadow: 0 0 40px #007bff;
+  box-shadow: 0 0 40px #c8ad7f;
 }
 
 @media (max-width: 884px) {
@@ -328,7 +328,7 @@ section {
   min-width: 150px; /* Ensure a minimum width */
   height: 50px;
   padding: 0 20px;
-  background-color: #007bff;
+  background-color: #c8ad7f;
   color: white;
   border: none;
   border-radius: 5px;
@@ -341,7 +341,7 @@ section {
 }
 
 #download-cv-button:hover {
-  background-color: #065a28;
+  background-color: #c8ad7f;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -360,7 +360,7 @@ section {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: gray;
+  color: #303030;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -369,14 +369,14 @@ section {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #007bff;
+  background-color: #c8ad7f;
   color: white;
 }
 
 /* About Section */
 #about {
   padding: 50px 0;
-  background-color: gray;
+  background-color: #303030;
   color: white;
 }
 
@@ -389,7 +389,7 @@ section {
   text-align: center;
   font-size: clamp(2rem, 2rem + 1vw, 2.5rem); /* Adjust font size */
   margin-bottom: 40px; /* Adjust margin */
-  color: #007bff;
+  color: #c8ad7f;
 }
 
 .about-content {
@@ -406,7 +406,7 @@ section {
 .about-text h3 {
   font-size: clamp(1.3rem, 1.3rem + 0.3vw, 1.5rem); /* Adjust font size */
   margin-bottom: 10px;
-  color: #007bff;
+  color: #c8ad7f;
 }
 .timeline {
   display: flex;
@@ -421,9 +421,9 @@ section {
   flex: 0 0 300px;
   margin-right: 20px; /* Reduce margin */
   padding: 20px;
-  background: gray;
+  background: #303030;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px #c8ad7f;
   scroll-snap-align: start;
   transition: transform 0.3s ease-in-out;
 }
@@ -443,7 +443,7 @@ section {
   transform: translateX(-50%);
   width: 30px;
   height: 30px;
-  background: #007bff;
+  background: #c8ad7f;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -454,7 +454,7 @@ section {
 
 .timeline-content h4 {
   margin: 20px 0 10px;
-  color: #007bff;
+  color: #c8ad7f;
   font-size: 1.1rem; /* Adjust font size */
 }
 
@@ -509,7 +509,7 @@ section {
 /* CSS for Skills Section */
 #skills {
   min-height: auto; /* Adjust min-height */
-  background-color: gray;
+  background-color: #303030;
   padding: 50px 0;
 }
 
@@ -523,7 +523,7 @@ section {
   text-align: center;
   font-size: clamp(2rem, 2rem + 1vw, 2.5rem); /* Adjust font size */
   margin-bottom: 40px; /* Adjust margin */
-  color: #007bff;
+  color: #c8ad7f;
 }
 
 .skills-content {
@@ -535,18 +535,18 @@ section {
 /* Skill Category Styling */
 .skill-category {
   padding: 15px; /* Adjust padding */
-  border: 2px solid #007bff;
+  border: 2px solid #c8ad7f;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
 .skill-category:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px #007bff;
+  box-shadow: 0 0 20px #c8ad7f;
 }
 
 .skill-category h3 {
-  color: #007bff;
+  color: #c8ad7f;
   margin-bottom: 15px; /* Adjust margin */
   text-align: center;
   font-size: 1.3rem; /* Adjust font size */
@@ -569,7 +569,7 @@ section {
 
 .tool-item i {
   font-size: 2rem; /* Adjust font size */
-  color: #007bff;
+  color: #c8ad7f;
 }
 
 .tool-item span {
@@ -622,7 +622,7 @@ section {
 }
 
 .soft-skill {
-  background: #007bff;
+  background: #c8ad7f;
   color: white;
   padding: 8px 15px; /* Adjust padding */
   border-radius: 20px;
@@ -654,13 +654,13 @@ html {
 }
 
 .tool-item i {
-  color: #007bff;
+  color: #c8ad7f;
   font-size: 2.5rem;
   transition: transform 0.3s ease;
 }
 
 .tool-item i[class*="colored"] {
-  color: #007bff !important;
+  color: #c8ad7f !important;
 }
 
 .tool-item:hover i {
@@ -672,7 +672,7 @@ html {
 /* Projects Section Styles */
 #projects {
   padding: 4rem 2rem;
-  background-color: gray;
+  background-color: #303030;
   min-height: auto; /* Adjust min-height */
 }
 
@@ -690,7 +690,7 @@ html {
 
 .project-card {
   background: rgba(131, 160, 142, 0.1);
-  border: 2px solid #007bff;
+  border: 2px solid #c8ad7f;
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -698,7 +698,7 @@ html {
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px #007bff;
+  box-shadow: 0 0 20px #c8ad7f;
 }
 
 .project-image {
@@ -742,17 +742,17 @@ html {
   align-items: center;
   gap: 0.3rem; /* Adjust gap */
   text-decoration: none;
-  color: #007bff;
+  color: #c8ad7f;
   transition: color 0.3s ease;
   padding: 0.5rem 1rem; /* Add some padding */
   border-radius: 5px;
-  border: 1px solid #007bff;
+  border: 1px solid #c8ad7f;
   font-size: 0.85rem; /* Adjust font size */
 }
 
 .project-links a:hover {
   color: #fff;
-  background-color: #007bff;
+  background-color: #c8ad7f;
 }
 
 .subtitle {
@@ -787,10 +787,10 @@ html {
 
 /* styling the footer */
 footer {
-  background-color: gray;
+  background-color: #303030;
   color: white;
   padding: 3rem 0;
-  border-top: 2px solid #007bff;
+  border-top: 2px solid #c8ad7f;
 }
 
 .footer-container {
@@ -808,7 +808,7 @@ footer {
 }
 
 .contact-info h2 {
-  color: #007bff;
+  color: #c8ad7f;
   margin-bottom: 1rem;
   font-size: 1.5rem; /* Adjust font size */
 }
@@ -819,7 +819,7 @@ footer {
 }
 
 .contact-info i {
-  color: #007bff;
+  color: #c8ad7f;
   margin-right: 0.5rem;
 }
 
@@ -835,14 +835,14 @@ footer {
 }
 
 .social-links-footer a:hover {
-  color: #007bff;
+  color: #c8ad7f;
 }
 
 .footer-bottom {
   margin-top: 2rem;
   text-align: center;
   padding-top: 1rem;
-  border-top: 1px solid rgba(12, 50, 222, 0.3);
+  border-top: 1px solid #c8ad7f;
   font-size: 0.9rem; /* Adjust font size */
 }
 
@@ -871,7 +871,7 @@ footer {
 .blog-container h1 {
   text-align: center;
   margin-bottom: 2rem;
-  color: gray;
+  color: #303030;
 }
 
 .blog-post {
@@ -891,17 +891,17 @@ footer {
 
 .blog-post h2 {
   margin-bottom: 0.5rem;
-  color: #007bff;
+  color: #c8ad7f;
 }
 
 .blog-post .date {
   font-size: 0.9rem;
-  color: gray;
+  color: #303030;
   margin-bottom: 1rem;
 }
 
 .blog-post p {
-  color: gray;
+  color: #303030;
 }
 
 .blog-post .tags {
@@ -911,7 +911,7 @@ footer {
 
 .blog-post .tag {
   display: inline-block;
-  background-color: #007bff;
+  background-color: #c8ad7f;
   color: white;
   padding: 0.3rem 0.6rem;
   border-radius: 5px;
@@ -922,7 +922,7 @@ footer {
 .blog-post .read-more {
   display: inline-block;
   margin-top: 1rem;
-  color: #007bff;
+  color: #c8ad7f;
   text-decoration: none;
   font-weight: bold;
 }
