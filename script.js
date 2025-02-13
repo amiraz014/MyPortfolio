@@ -8,9 +8,9 @@ function cancel(){
 }
 // Typewriter Effect
 const texts = [
-    "Software Engineering Student",
+    "a Future IS Engineer",
     "New Tech Enthusiast",
-    "DevOps Learner",
+    "Available for Internship/Apprenticeship",
 ]
 let speed  =100;
 const textElements = document.querySelector(".typewriter-text");
@@ -42,7 +42,6 @@ function eraseText(){
 document.addEventListener('DOMContentLoaded', () => {
     const downloadButton = document.getElementById('download-cv-button');
     const dropdown = document.getElementById('cv-options');
-    const downloadCvEn = document.getElementById('download-cv-en');
     const downloadCvFr = document.getElementById('download-cv-fr');
 
     downloadButton.addEventListener('click', (event) => {
@@ -60,18 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
         dropdown.style.display = 'none';
     });
 
-    downloadCvEn.addEventListener('click', () => {
-        const cvUrl = 'source/cvayoubEnglishStage.pdf';
-        const newTab = window.open(cvUrl, '_blank');
-        if (newTab) {
-            newTab.focus();
-        } else {
-            alert('Please allow pop-ups for this website.');
-        }
-    });
+  
 
     downloadCvFr.addEventListener('click', () => {
-        const cvUrl = 'source/cvayoubStageV01.pdf';
+        const cvUrl = 'source/cv-amir-adjaz-vm.pdf';
         const newTab = window.open(cvUrl, '_blank');
         if (newTab) {
             newTab.focus();
@@ -81,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     const blogPosts = [
         {
             title: "My First Blog Post",
@@ -153,6 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
         blogContainer.appendChild(postElement);
     });
 });
-
+*/
 
 window.onload = typeWriter
