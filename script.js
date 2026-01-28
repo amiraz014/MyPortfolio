@@ -39,38 +39,38 @@ function eraseText(){
 }
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const downloadButton = document.getElementById('download-cv-button');
-    const dropdown = document.getElementById('cv-options');
-    const downloadCvFr = document.getElementById('download-cv-fr');
+// document.addEventListener('DOMContentLoaded', () => {
+//     const downloadButton = document.getElementById('download-cv-button');
+//     const dropdown = document.getElementById('cv-options');
+//     const downloadCvFr = document.getElementById('download-cv-fr');
 
-    downloadButton.addEventListener('click', (event) => {
-        event.stopPropagation();
-        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-    });
+//     downloadButton.addEventListener('click', (event) => {
+//         event.stopPropagation();
+//         dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+//     });
 
-    document.addEventListener('click', (event) => {
-        if (!dropdown.contains(event.target) && event.target !== downloadButton) {
-            dropdown.style.display = 'none';
-        }
-    });
+//     document.addEventListener('click', (event) => {
+//         if (!dropdown.contains(event.target) && event.target !== downloadButton) {
+//             dropdown.style.display = 'none';
+//         }
+//     });
 
-    window.addEventListener('scroll', () => {
-        dropdown.style.display = 'none';
-    });
+//     window.addEventListener('scroll', () => {
+//         dropdown.style.display = 'none';
+//     });
 
   
 
-    downloadCvFr.addEventListener('click', () => {
-        const cvUrl = 'source/cv-amir-adjaz-vm.pdf';
-        const newTab = window.open(cvUrl, '_blank');
-        if (newTab) {
-            newTab.focus();
-        } else {
-            alert('Please allow pop-ups for this website.');
-        }
-    });
-});
+//     downloadCvFr.addEventListener('click', () => {
+//         const cvUrl = 'source/cv-amir-adjaz-vm.pdf';
+//         const newTab = window.open(cvUrl, '_blank');
+//         if (newTab) {
+//             newTab.focus();
+//         } else {
+//             alert('Please allow pop-ups for this website.');
+//         }
+//     });
+// });
 
 /*document.addEventListener('DOMContentLoaded', () => {
     const blogPosts = [
